@@ -1,0 +1,363 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    border-sizing:border-box;
+
+}
+
+
+/***************************** clearfix hack *****************************/
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/***************************** html *****************************/
+html{
+    background-image: url("../images/paper.gif");
+}
+
+/***************************** body tags*****************************/
+body{
+    font-family: Arial, Helvetica,sans-serif;
+    font-size:100%;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0px auto ;
+    border: 5px solid #4682b4;
+    box-shadow: 0px 0px 20px 5px black;
+    background-color: white;
+}
+
+
+/***************************** main tags*****************************/
+main{
+    padding: 1em;
+    clear: both;
+}
+
+/***************************** header tags*****************************/
+header{
+    border-bottom: 5px solid steelblue;
+    background-image: linear-gradient(rgba(255,255,255,1),rgba(176,196,222,1));    
+}
+
+header img{
+    float:left;
+    margin: 0px .5em 20px 1.5em; 
+    max-width: 140px;
+    width: 100%;
+    min-width:70px;
+}
+
+header h2{
+    font-size: 250%;
+    color: steelblue;
+    text-shadow: 4px 4px 4px steelblue;
+    font-style: italic;
+    margin-top: 15px;
+   
+}
+
+header h3{
+    font-size: 150%;
+    
+}
+
+/***************************** heading tags*****************************/
+h1{
+    font-size: 150%;
+    margin-top: 0px;
+}
+
+/***************************** section tags*****************************/
+section h2, aside h2{
+    font-size: 130%;
+    margin: 10px .5em;
+    font-weight: bold;
+
+}
+
+section h3{
+    font-size: 125%;
+    margin-bottom: 0px;
+    margin-left: .5em;
+}
+
+section p{
+    margin: 10px .5em;
+
+}
+
+/***************************** section links *****************************/
+section a:link {
+    color: maroon;
+}
+section a:visited {
+    color:maroon;
+}
+section a:hover {
+    color:steelblue;
+}
+section a:active {
+    color: steelblue;
+}
+
+/***************************** aside tags *****************************/
+aside a{
+    font-weight: bold;
+}
+
+aside h2{
+    color:maroon;
+    margin-top:0;
+    font-weight: normal;
+    text-align: left;
+    margin-left: 0;
+}
+
+aside h3{
+    font-size: 125%;
+    font-weight: bold;
+}
+
+#firstcolumn{
+    float: left;
+}
+
+#thridcolumn{
+    float:right;
+}
+
+/***************************** aside links *****************************/
+aside a:link {
+    color: steelblue;
+}
+aside a:visited {
+    color:steelblue;
+}
+aside a:hover {
+    color:maroon;
+}
+aside a:active {
+    color: maroon;
+} 
+
+/***************************** footer tags*****************************/
+footer{
+    text-align: center;
+    color: white;
+    font-size: 80%;
+    font-weight: bold;
+    background-color: steelblue;
+    border: solid steelblue;
+    font-variant: small-caps;
+    clear: both;
+}
+
+footer p{
+    margin: 0;
+    padding: 1em;
+}
+/***************************** list items tags*****************************/
+li{
+    margin-top: 7px;
+}
+
+/***************************** list items tags*****************************/
+blockquote{
+    border-left: 3px solid maroon;
+    padding: 5px 1em;
+    background-color: rgba(176,196,222, .75);
+    margin-left: 2em;
+    margin-right:.5em;
+}
+
+/***************************** class sidebar*****************************/
+.sidebar{
+    width:25%;
+}
+
+/***************************** class homesection*****************************/
+.homesection{
+    width:50%;
+    float:left;
+    margin-bottom: 20px;
+}
+
+/***************************** id nav_menu *****************************/
+
+/** INLINE NAV BAR STYLE
+#nav_menu{
+    margin:0px;
+}
+
+#nav_menu ul{
+    list-style: none;
+    text-align: center;
+    border-bottom: 1px solid steelblue;
+    border-top: 1px solid steelblue;
+    background-color: lightsteelblue;
+    padding:10px 0px;
+    margin:0px
+}
+
+#nav_menu ul li{
+    display: inline;
+    border-right: 2px solid black;
+    padding:10px 3em;
+}
+
+#nav_menu #last{
+    border-right: none;
+}
+
+#nav_menu ul li a{
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#nav_menu ul li a:hover{
+    color:red;
+}
+**/
+
+/** W3 Horizontal Menu Bar Inline float and block menu**/
+
+#nav_menu{
+    margin:0px;
+    padding: 0px;
+}
+
+#nav_menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: steelblue;
+  }
+  
+#nav_menu ul li {
+    float: left;
+  }
+  
+#nav_menu ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+ #nav_menu ul li a:hover {
+    background-color: lightsteelblue;
+    color: black;
+  }
+
+  #nav_menu #about{
+      float:right;
+  }
+/***************************** id nav_list *****************************/
+
+#nav_list ul{
+    list-style: none;
+    padding-left:0;
+}
+
+#nav_list ul li{
+    width: 90%;
+    margin:0 auto .5em;
+}
+
+#nav_list ul li a{
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: lightsteelblue;
+    padding:.5em 0em .5em .5em;
+    color: black;
+    border: 1px solid black;
+}
+#nav_list ul li a:hover, #nav_list ul li a:focus{
+    background-color: steelblue;
+    color: white;
+}
+
+/***************************** mobile menu *****************************/
+#mobilemenu{
+    display:none;
+}
+
+/***************************** media querys*****************************/
+/* Alays put the media query at the bottom */
+@media only screen and (max-width: 900px) {
+    body{
+        box-shadow: none;
+        border: none;
+        font-size: 90%;
+    }
+
+    html{
+        background-image: none;
+    }
+    
+}
+
+/* Alays put the media query at the bottom */
+@media only screen and (max-width: 767px) {
+    header h2{
+        font-size: 200%;
+        margin-top:.5em;
+    }
+
+    .homesection{
+        float:none;
+        width: 100%;
+    }
+
+
+    .sidebar{
+        width:100%;
+        float: none;
+    }
+
+    #mobilemenu{
+        display: contents;
+    }
+
+    #nav_menu{
+        display:none;
+    }
+
+    .slicknav_menu{
+        background-color: steelblue !important;
+    }
+
+    .slicknav_btn{
+        background-color: lightsteelblue !important;
+        box-shadow: 2px 2px 2px black !important;
+    }
+    
+}
+
+/* Alays put the media query at the bottom */
+@media only screen and (max-width: 479px) {
+    header h2{
+        font-size: 200%;
+        margin-top:.5em;
+    }
+    header img{
+        float: none;
+        margin: 0;
+    }
+    header{
+        text-align: center;
+    }
+    
+}
+
+
+
